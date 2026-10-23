@@ -25,6 +25,6 @@
   <ItemGroup>
     <PackageReference Include="SixLabors.ImageSharp" Version="4.1.3" />
     <PackageReference Include="Ucu.Poo.DiscordPublisher" Version="1.1.7" />
-    <PackageReference Include="Ucu.Poo.FaceRecognizer" Version="1.1.9" />
+    <PackageReference Include="Ucu.Poo.FaceRecognizer" Version="2.0.11" />
   </ItemGroup>
 </Project>
