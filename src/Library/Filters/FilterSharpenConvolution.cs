@@ -1,7 +1,3 @@
-using System;
-using System.Drawing;
-using CompAndDel;
-
 namespace CompAndDel.Filters
 {
   /// <summary>
@@ -10,9 +6,6 @@ namespace CompAndDel.Filters
   /// </summary>
   public class FilterSharpenConvolution : FilterGenericConvolution
   {
-    protected int[,] kernel;
-    protected int complement, divider;
-
     /// <summary>
     /// Inicializa una nueva instancia de <see cref="FilterSharpenConvolution"/> asignando el kernel, el
     /// complemento y el divisor.

@@ -21,7 +21,7 @@ namespace CompAndDel
             PipeSerial pipeSerialNotSend = new PipeSerial(new FilterBlurConvolution(new int[3,3], 0, 9), pipeSave1);
             PipeSerial pipeSerialSend = new PipeSerial(new PublishFilter(@"imagen_r_.png"), pipeNull);
 
-            PipeConditionalFork pipeConditional = new PipeConditionalFork(new ConditionalFilter(), pipeSerialSend, pipeSerialNotSend);
+            PipeConditionalFork pipeConditional = new PipeConditionalFork(new FaceDetectionFilter(), pipeSerialSend, pipeSerialNotSend);
             PipeSerial pipeSerial1 = new PipeSerial(new FilterGrayscale(), pipeConditional);
 
             PictureProvider provider = new PictureProvider();
